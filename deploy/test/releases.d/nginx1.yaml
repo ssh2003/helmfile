@@ -1,0 +1,14 @@
+environments:
+  test:
+---
+bases:
+  - ../../common/defaults.yaml
+  - ../../common/repositories.yaml
+  - ../../common/templates.yaml
+
+releases:
+  - inherit:
+      - template: nginx
+    name: nginx1
+    namespace: test
+  
