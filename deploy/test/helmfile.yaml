@@ -1,0 +1,10 @@
+environments:
+  test:
+    values:
+      - stageDomain: test.test
+        stage: dev
+        prefix: test
+
+---
+helmfiles:
+  - releases.d/*.yaml  

@@ -1,0 +1,5 @@
+{{ if has ( env "UPDATE_REPOS" | default "no") (list "yes" "y" "YES" "Yes" "True" "true") }}
+repositories:
+  - name: bitnami
+    url: https://charts.bitnami.com/bitnami
+{{- end }}

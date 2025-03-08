@@ -1,0 +1,10 @@
+templates:
+  default:
+  nginx:
+    chart: bitnami/nginx
+    version: 19.0.1
+    createNamespace: true
+    missingFileHandler: Debug
+    valuesTemplate:
+      - ../values/nginx.yaml.gotmpl
+      - "values/nginx.yaml.gotmpl"

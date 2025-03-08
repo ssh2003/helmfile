@@ -1,0 +1,9 @@
+bases:
+  - common/helmfile.yaml
+  - common/repositories.yaml
+
+environments:
+  test:
+
+helmfiles:
+  - path: test/helmfile.yaml

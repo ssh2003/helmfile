@@ -1,0 +1,18 @@
+environments:
+  test:
+    values:
+      - stageDomain: test.test
+        stage: dev
+        prefix: test
+---
+bases:
+  - ../../common/defaults.yaml
+  - ../../common/repositories.yaml
+  - ../../common/templates.yaml
+
+releases:
+  - inherit:
+      - template: nginx
+    name: nginx
+    namespace: test
+  
